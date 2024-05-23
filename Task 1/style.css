@@ -1,0 +1,115 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    background-color: blanchedalmond;
+    font-family: cursive;
+}
+
+.companyname {
+    text-align: center;
+    margin: 20px;
+    font-size: 50px;
+}
+
+.companyndec {
+    text-align: center;
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.main {
+    height: 60%;
+    width: 60%;
+    margin: auto;
+    margin-top: 10px;
+    font-family: cursive;
+}
+
+.meet {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.team {
+    height: 80%;
+    width: 80%;
+    margin: auto;
+    margin-top: 10px;
+    font-family: cursive;
+    margin-top: 30px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.teamname {
+    text-align: center;
+    padding: 10px;
+    width: 300px;
+    margin: auto;
+    margin-top: 20px;
+    font-size: 20px;
+    border-radius: 25px;
+    background-color: black;
+    color: white;
+}
+
+.teammember {
+    height: 300px;
+    width: 250px;
+    background-color: darkgrey;
+    margin: 15px;
+    display: flex;
+    border-radius: 50px;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+}
+
+.teammember img {
+    height: 200px;
+    width: 200px;
+    border-radius: 50%;
+    object-fit: cover;
+
+}
+
+.membername,
+.memberposition {
+    margin-top: 8px;
+    font-size: 15px;
+    font-weight: bold;
+    text-align: center;
+
+}
+
+@media (max-width:768px) {
+    .teammember {
+        width: 40%;
+    }
+
+    .companyname {
+        font-size: 30px;
+    }
+
+    .main {
+        width: 90%;
+    }
+
+}
+
+@media (max-width:600px) {
+    .teammember {
+        width: 80%;
+    }
+
+    .main {
+        width: 90%;
+    }
+}
