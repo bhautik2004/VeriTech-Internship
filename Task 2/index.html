@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CAR Landing Page</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <img src="img/car-logo.png">
+        <div class="menu">
+            <ul>
+                <li><a href="Home">Home</a></li>
+                <li><a href="About">About</a></li>
+                <li><a href="Features">Features</a></li>
+                <li><a href="Variation">Variation</a></li>
+                <li><a href="Specials">Specials</a></li>
+                <li><a href="Contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+    </header>
+    <div class="hero">
+
+        <div class="text">
+            <h4>Powerful, Fun and</h4>
+            <h1>Fierce to <br> <span>Drive</span></h1>
+            <p>Real Poise, Real Power, Real Perfomance.</p>
+            <a href="#" class="btn">book a test ride</a>
+        </div>
+    </div>
+    <script>
+        let heroBg = document.querySelector('.hero');
+
+        setInterval(() => {
+            heroBg.style.backgroundImage = "url(img/bg-light.jpg)"
+            
+            setTimeout(() => {
+                heroBg.style.backgroundImage = "url(img/bg.jpg)"
+            }, 1000);
+        }, 2200);
+    </script>
+</body>
+</html>
